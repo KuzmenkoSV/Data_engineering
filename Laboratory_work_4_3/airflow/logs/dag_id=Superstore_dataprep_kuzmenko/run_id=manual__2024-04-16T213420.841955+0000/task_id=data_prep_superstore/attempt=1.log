@@ -1,0 +1,21 @@
+[2024-04-16T21:34:29.451+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-04-16T21:34:29.607+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Superstore_dataprep_kuzmenko.data_prep_superstore manual__2024-04-16T21:34:20.841955+00:00 [queued]>
+[2024-04-16T21:34:29.630+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Superstore_dataprep_kuzmenko.data_prep_superstore manual__2024-04-16T21:34:20.841955+00:00 [queued]>
+[2024-04-16T21:34:29.631+0000] {taskinstance.py:2303} INFO - Starting attempt 1 of 1
+[2024-04-16T21:34:29.668+0000] {taskinstance.py:2327} INFO - Executing <Task(PythonOperator): data_prep_superstore> on 2024-04-16 21:34:20.841955+00:00
+[2024-04-16T21:34:29.679+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=419) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-04-16T21:34:29.683+0000] {standard_task_runner.py:63} INFO - Started process 427 to run task
+[2024-04-16T21:34:29.681+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'Superstore_dataprep_kuzmenko', 'data_prep_superstore', 'manual__2024-04-16T21:34:20.841955+00:00', '--job-id', '19', '--raw', '--subdir', 'DAGS_FOLDER/superstore_dag_by_Kuzmenko.py', '--cfg-path', '/tmp/tmpdxuhx8i4']
+[2024-04-16T21:34:29.684+0000] {standard_task_runner.py:91} INFO - Job 19: Subtask data_prep_superstore
+[2024-04-16T21:34:29.780+0000] {task_command.py:426} INFO - Running <TaskInstance: Superstore_dataprep_kuzmenko.data_prep_superstore manual__2024-04-16T21:34:20.841955+00:00 [running]> on host b3ab91a725a8
+[2024-04-16T21:34:30.126+0000] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='KuzmenkoSV' AIRFLOW_CTX_DAG_ID='Superstore_dataprep_kuzmenko' AIRFLOW_CTX_TASK_ID='data_prep_superstore' AIRFLOW_CTX_EXECUTION_DATE='2024-04-16T21:34:20.841955+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-04-16T21:34:20.841955+00:00'
+[2024-04-16T21:34:30.130+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-04-16T21:34:38.136+0000] {logging_mixin.py:188} INFO - [INFO] PostgreSQL connection closed
+[2024-04-16T21:34:38.148+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-04-16T21:34:38.150+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-04-16T21:34:38.166+0000] {taskinstance.py:1205} INFO - Marking task as SUCCESS. dag_id=Superstore_dataprep_kuzmenko, task_id=data_prep_superstore, execution_date=20240416T213420, start_date=20240416T213429, end_date=20240416T213438
+[2024-04-16T21:34:38.235+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-04-16T21:34:38.265+0000] {taskinstance.py:3482} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-04-16T21:34:38.271+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
