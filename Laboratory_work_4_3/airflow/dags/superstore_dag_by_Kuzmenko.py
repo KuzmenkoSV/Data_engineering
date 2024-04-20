@@ -18,7 +18,7 @@ def data_prep():
         connection = psycopg2.connect(
             host="95.131.149.21",
             user="m_01",
-            password="ie8smn",
+            password="YOUR PASSWORD",
             database="dep1"
         )
         connection.autocommit = True
